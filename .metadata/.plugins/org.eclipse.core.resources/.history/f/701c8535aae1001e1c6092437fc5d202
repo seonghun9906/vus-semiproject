@@ -1,0 +1,40 @@
+package kr.co.icia.vrp.semi.service;
+
+import java.io.IOException;
+import java.util.Date;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import kr.co.icia.vrp.semi.entity.Node;
+import kr.co.icia.vrp.semi.util.KakaoApiUtil;
+import kr.co.icia.vrp.semi.util.KakaoApiUtil.Point;
+
+@SpringBootTest
+public class NodeServiceTest {
+
+  @Autowired
+  private NodeService nodeService;
+  
+  @Test
+  public void addTest() throws IOException, InterruptedException {
+    Point center = new Point(126.675113024566, 37.4388938204128);// 인천일보아카데미
+    List<Point> pointByKeyword = KakaoApiUtil.getPointByKeyword("약국", center);
+    for (Point point : pointByKeyword) {
+      Node node = new Node();
+      node.setId();
+      node.setName(point.getName());
+      node.setPhone(point.getPhone());
+      node.setAddress();
+      node.setX(point.getX());
+      node.setY(point.getY());
+      node.setRegDt(new Date());
+      node.setModDt(new Date());
+      nodeService.add(node);
+      
+    }
+
+  }
+}

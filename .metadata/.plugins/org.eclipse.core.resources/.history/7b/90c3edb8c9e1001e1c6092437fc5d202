@@ -1,0 +1,5 @@
+package kr.co.icia.vrp.semi.util;
+
+public class JsonResult {
+
+}

@@ -1,0 +1,28 @@
+package kr.co.icia.vrp.semi.vrp;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import lombok.Getter;
+import lombok.Setter;
+
+/**
+ *  경로 최적화 최종 결과
+ */
+@Getter
+@Setter
+public class VrpResult {
+  private Integer totalJobCount; // 전체 배송 건수
+  private Long cost; // 비용
+  private Integer totalVehicleCount; // 전체 차량 개수
+  /**
+   * 차량 별 경로 맵
+   */
+  private Map<String /* vehicleId */, List<VrpVehicleRoute>> vrpVehicleRouteListMap = new HashMap<String, List<VrpVehicleRoute>>();
+  /**
+   * 경로 목록
+   */
+  private List<VrpVehicleRoute> vrpVehicleRouteList = new ArrayList<VrpVehicleRoute>();
+}
