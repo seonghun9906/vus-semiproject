@@ -1,8 +1,13 @@
 package kr.co.icia.vrp.semi.entity;
 import java.util.Date;
+
+import lombok.Getter;
+import lombok.Setter;
 /**
  * 노드비용  Class
  */
+@Getter
+@Setter
 public class NodeCost {
     private Long id;//노드비용id
     private Long startNodeId;//시작노드id
@@ -169,4 +174,5 @@ public class NodeCost {
     public void setModDt(Date modDt) {
         this.modDt = modDt;
     }
+  
 }

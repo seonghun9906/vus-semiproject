@@ -20,7 +20,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class KakaoApiUtil {
-  private static final String REST_API_KEY = "3963d4acc3e66c56c54f1c5090486820";
+  private static final String REST_API_KEY = "b95bb41121e03f7a581d91f8a3a4d7ec";
 
   /**
    * 키워드 장소 검색
@@ -175,6 +175,10 @@ public class KakaoApiUtil {
     private String adddress;
     @JsonIgnore
     private String id;
+    
+    public Point() {
+      
+    }
 
     public Point(Double x, Double y) {
       this.x = x;

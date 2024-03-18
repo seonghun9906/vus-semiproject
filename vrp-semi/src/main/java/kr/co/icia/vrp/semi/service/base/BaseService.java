@@ -10,7 +10,7 @@ public class BaseService<T, ID extends Serializable, Dao extends BaseDao<T, ID>>
   @Autowired
   protected Dao dao;
   @Transactional(readOnly = true)
-  public List<T> getList(SearchParameter searchParameter) {
+  public List<T> getList(SearchParameter searchParameter) { // 여기서 나와있는 List<t>는 노드서비스로 가면 t=Node와 같음.
     return dao.selectList(searchParameter);
   }
   @Transactional(readOnly = true)

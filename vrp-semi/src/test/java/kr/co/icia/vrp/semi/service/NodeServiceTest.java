@@ -27,7 +27,7 @@ public class NodeServiceTest {
       node.setId(Long.valueOf(point.getId())); //노드 id
       node.setName(point.getName());
       node.setPhone(point.getPhone());
-      node.setAddress(point.getAddress());
+      node.setAddress(point.getAdddress());
       node.setX(point.getX()); // 경도
       node.setY(point.getY()); // 위도
       node.setRegDt(new Date()); // 등록일시

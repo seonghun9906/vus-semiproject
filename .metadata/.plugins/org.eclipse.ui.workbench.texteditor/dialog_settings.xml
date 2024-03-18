@@ -4,10 +4,16 @@
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="prev"/>
+		<item key="selection" value="displayData"/>
 		<list key="findhistory">
-			<item value="prev"/>
-			<item value="documetn"/>
+			<item value="totalVisit"/>
+			<item value="// 백팁"/>
+			<item value="displaydata"/>
+			<item value="break"/>
+			<item value="1"/>
+			<item value="15"/>
+			<item value="main"/>
+			<item value="poi"/>
 		</list>
 		<list key="replacehistory">
 		</list>

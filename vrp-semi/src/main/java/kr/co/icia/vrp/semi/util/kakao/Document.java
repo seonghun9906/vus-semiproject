@@ -19,18 +19,4 @@ public class Document {
 	@JsonProperty("road_address_name")
 	private String roadAddressName;
 
-	public Double getX() {
-		return x;
-	}
-
-	public Double getY() {
-		return y;
-	}
-	
-	public String getPlaceName() {
-		return placeName;
-	}
-	public String getPhone() {
-		return phone;
-	}
 }

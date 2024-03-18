@@ -31,9 +31,6 @@
                #{entity.y},
                #{entity.regDt},
                #{entity.modDt})
-        <selectKey resultType="Long" keyProperty="entity.id">
-            SELECT LAST_INSERT_ID()
-        </selectKey>
     </insert>
     <update id="update" parameterType="Node">
         /* 노드 수정 */

@@ -71,5 +71,9 @@ public class KakaoUtilTest {
    System.out.println("톨비:" + toll);
    System.out.println("경로:" + new ObjectMapper().writeValueAsString(pointList));
  }
+ 
+ 
+ 
+ 
 }
 
